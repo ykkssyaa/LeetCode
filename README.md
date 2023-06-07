@@ -2,8 +2,8 @@
 
 [My Accont on LeetCode](https://leetcode.com/ykkssyaa/)
 
-## Solved problems count: __12__
-### Easy: 10
+## Solved problems count: __13__
+### Easy: 11
 ### Medium: 1
 ### Hard: 1
 
@@ -20,6 +20,7 @@
 8. [557. Reverse Words in a String II](LeetCode/Program.cs) - [on LeetCode](https://leetcode.com/problems/reverse-words-in-a-string-iii/)
 9. [1768. Merge Strings Alternately](Golang/main.go) - [on LeetCode](https://leetcode.com/problems/merge-strings-alternately/)
 10. [389. Find the Difference](Golang/main.go) - [on LeetCode](https://leetcode.com/problems/find-the-difference/)
+11. [28. Find the Index of the First Occurrence in a String](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
 
 
 ## Medium
