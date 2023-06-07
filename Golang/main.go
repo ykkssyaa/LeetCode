@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
@@ -13,7 +15,7 @@ func main() {
 
 }
 
-// https://leetcode.com/problems/merge-strings-alternately/?envType=study-plan-v2&envId=programming-skills
+// https://leetcode.com/problems/merge-strings-alternately/
 // 1768. Merge Strings Alternately
 
 func mergeAlternately(word1 string, word2 string) string {
@@ -37,4 +39,34 @@ func min(a, b int) int {
 		return a
 	}
 	return b
+}
+
+// https://leetcode.com/problems/find-the-difference/
+// 389. Find the Difference
+func findTheDifference(s string, t string) byte {
+	chars := make(map[uint8]int)
+
+	for i := 0; i < len(s); i++ {
+		chars[t[i]]++
+		chars[s[i]]--
+	}
+	chars[t[len(t)-1]]++
+
+	for char, value := range chars {
+		if value != 0 {
+			return char
+		}
+	}
+	return 0
+}
+
+func findTheDifferenceVer2(s string, t string) byte {
+	var res byte
+
+	for i := 0; i < len(s); i++ {
+		res += t[i]
+		res -= s[i]
+	}
+	res += t[len(t)-1]
+	return res
 }
