@@ -2,8 +2,8 @@
 
 [My Accont on LeetCode](https://leetcode.com/ykkssyaa/)
 
-## Solved problems count: __11__
-### Easy: 9
+## Solved problems count: __12__
+### Easy: 10
 ### Medium: 1
 ### Hard: 1
 
