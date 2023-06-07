@@ -2,8 +2,8 @@
 
 [My Accont on LeetCode](https://leetcode.com/ykkssyaa/)
 
-## Solved problems count: __10__
-### Easy: 8
+## Solved problems count: __11__
+### Easy: 9
 ### Medium: 1
 ### Hard: 1
 
@@ -18,6 +18,7 @@
 6. [144. Binary Tree Preorder Traversal](Binary%20Tree%20Preorder%20Traversal/Binary%20Tree%20Preorder%20Traversal.cpp) - [on LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/)
 7. [145. Binary Tree Postorder Traversal](Binary%20Tree%20Preorder%20Traversal/Binary%20Tree%20Preorder%20Traversal.cpp) - [on LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/)
 8. [557. Reverse Words in a String II](LeetCode/Program.cs) - [on LeetCode](https://leetcode.com/problems/reverse-words-in-a-string-iii/)
+9. [1768. Merge Strings Alternately](Golang/Main.go) - [on LeetCode](https://leetcode.com/problems/merge-strings-alternately/)
 
 
 ## Medium
