@@ -1,17 +1,12 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 
-	word1, word2 := "a", "pqr"
-	answer := "apbqcr"
-	res := mergeAlternately(word1, word2)
+	word1 := "aabaaba"
 
-	fmt.Println(res)
-	fmt.Println(res == answer)
+	fmt.Println(repeatedSubstringPattern(word1))
 
 }
 

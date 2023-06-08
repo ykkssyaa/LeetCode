@@ -45,3 +45,35 @@ func isAnagram(s string, t string) bool {
 
 	return counter == len(s)
 }
+
+// 459. Repeated Substring Pattern
+// https://leetcode.com/problems/repeated-substring-pattern/
+func repeatedSubstringPattern(s string) bool {
+
+	var sub string = string(s[0])
+
+	for i := 0; i < len(s)/2; i++ {
+
+		flag := true
+
+		for j := i + 1; j < len(s); j += len(sub) {
+			if len(sub) > len(s[j:]) {
+				flag = false
+				break
+			}
+
+			if s[j:j+len(sub)] != sub {
+				flag = false
+				break
+			}
+		}
+
+		if flag {
+			return true
+		}
+
+		sub += string(s[i+1])
+	}
+	return false
+
+}
