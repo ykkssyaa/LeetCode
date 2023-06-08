@@ -21,6 +21,7 @@
 9. [1768. Merge Strings Alternately](Golang/main.go) - [on LeetCode](https://leetcode.com/problems/merge-strings-alternately/)
 10. [389. Find the Difference](Golang/main.go) - [on LeetCode](https://leetcode.com/problems/find-the-difference/)
 11. [28. Find the Index of the First Occurrence in a String](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
+12. [242. Valid Anagram](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/valid-anagram/)
 
 
 ## Medium
