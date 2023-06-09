@@ -77,3 +77,22 @@ func repeatedSubstringPattern(s string) bool {
 	return false
 
 }
+
+// 1. Two Sum - Golang edition with using map
+// https://leetcode.com/problems/two-sum/
+func twoSum(nums []int, target int) (arr []int) {
+
+	var d = make(map[int]int)
+	arr = []int{0, 0}
+	for i, v := range nums {
+		var r = target - v
+
+		if _, ok := d[r]; ok {
+			arr = []int{d[r], i}
+			return
+		}
+
+		d[v] = i
+	}
+	return
+}
