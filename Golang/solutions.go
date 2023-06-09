@@ -96,3 +96,18 @@ func twoSum(nums []int, target int) (arr []int) {
 	}
 	return
 }
+
+// 283. Move Zeroes
+// https://leetcode.com/problems/move-zeroes/
+func moveZeroes(nums []int) {
+
+	var c int16 = 0
+	for i := 0; i < len(nums); i++ {
+		if nums[i] == 0 {
+			nums = append(nums[:i], nums[i+1:]...)
+			c++
+			i--
+		}
+	}
+	nums = append(nums, make([]int, c)...)
+}

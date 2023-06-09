@@ -4,9 +4,9 @@ import "fmt"
 
 func main() {
 
-	word1 := "aabaaba"
-
-	fmt.Println(repeatedSubstringPattern(word1))
+	arr := []int{0, 0, 1}
+	moveZeroes(arr)
+	fmt.Println(arr)
 
 }
 

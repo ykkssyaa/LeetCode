@@ -2,8 +2,8 @@
 
 [My Accont on LeetCode](https://leetcode.com/ykkssyaa/)
 
-## Solved problems count: __13__
-### Easy: 11
+## Solved problems count: __16__
+### Easy: 14
 ### Medium: 1
 ### Hard: 1
 
@@ -22,6 +22,9 @@
 10. [389. Find the Difference](Golang/main.go) - [on LeetCode](https://leetcode.com/problems/find-the-difference/)
 11. [28. Find the Index of the First Occurrence in a String](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
 12. [242. Valid Anagram](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/valid-anagram/)
+13. [459. Repeated Substring Pattern](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/repeated-substring-pattern/)
+14. [283. Move Zeroes](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/move-zeroes/)
+
 
 
 ## Medium
