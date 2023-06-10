@@ -27,6 +27,7 @@
 15. [66. Plus One](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/plus-one/)
 16. [1502. Can Make Arithmetic Progression From Sequence](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/)
 17. [1822. Sign of the Product of an Array](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/sign-of-the-product-of-an-array/)
+18. [896. Monotonic Array](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/monotonic-array/)
 
 
 

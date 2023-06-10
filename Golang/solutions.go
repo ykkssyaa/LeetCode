@@ -190,3 +190,26 @@ func canMakeArithmeticProgression(arr []int) bool {
 
 	return true
 }
+
+// 896. Monotonic Array
+// https://leetcode.com/problems/monotonic-array/
+func isMonotonic(nums []int) bool {
+	d := 0
+
+	for i := 1; i < len(nums); i++ {
+		if nums[i-1] < nums[i] {
+			if d == 0 {
+				d = 1
+			} else if d == -1 {
+				return false
+			}
+		} else if nums[i-1] > nums[i] {
+			if d == 0 {
+				d = -1
+			} else if d == 1 {
+				return false
+			}
+		}
+	}
+	return true
+}
