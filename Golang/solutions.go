@@ -125,3 +125,68 @@ func plusOne(digits []int) []int {
 	return digits
 
 }
+
+// 1822. Sign of the Product of an Array
+// https://leetcode.com/problems/sign-of-the-product-of-an-array/
+func arraySign(nums []int) int {
+
+	flag := true
+	for _, num := range nums {
+		if num < 0 {
+			flag = !flag
+
+		} else if num == 0 {
+			return 0
+		}
+	}
+	if flag {
+		return 1
+	} else {
+		return -1
+	}
+}
+
+// 1502. Can Make Arithmetic Progression From Sequence
+// https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
+func canMakeArithmeticProgression(arr []int) bool {
+
+	sum, max, min := 0, arr[0], arr[0]
+
+	for _, value := range arr {
+		sum += value
+
+		if value > max {
+			max = value
+		}
+		if value < min {
+			min = value
+		}
+	}
+
+	var d int = max - min
+
+	if d%(len(arr)-1) != 0 {
+		return false
+	}
+
+	d /= len(arr) - 1
+	if d == 0 {
+		return true
+	}
+
+	m := make(map[int]int)
+	for i := min; i <= max; i += d {
+		m[i]++
+	}
+
+	for _, val := range arr {
+		m[val]--
+	}
+	for _, val := range m {
+		if val != 0 {
+			return false
+		}
+	}
+
+	return true
+}
