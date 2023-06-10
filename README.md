@@ -2,8 +2,8 @@
 
 [My Accont on LeetCode](https://leetcode.com/ykkssyaa/)
 
-## Solved problems count: __17__
-### Easy: 15
+## Solved problems count: __19__
+### Easy: 17
 ### Medium: 1
 ### Hard: 1
 
@@ -25,6 +25,8 @@
 13. [459. Repeated Substring Pattern](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/repeated-substring-pattern/)
 14. [283. Move Zeroes](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/move-zeroes/)
 15. [66. Plus One](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/plus-one/)
+16. [1502. Can Make Arithmetic Progression From Sequence](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/)
+17. [1822. Sign of the Product of an Array](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/sign-of-the-product-of-an-array/)
 
 
 
