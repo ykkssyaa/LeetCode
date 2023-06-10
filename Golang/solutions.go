@@ -22,7 +22,6 @@ func strStr(haystack string, needle string) int {
 
 // 242. Valid Anagram
 // https://leetcode.com/problems/valid-anagram/
-
 func isAnagram(s string, t string) bool {
 
 	if len(s) != len(t) {
@@ -110,4 +109,19 @@ func moveZeroes(nums []int) {
 		}
 	}
 	nums = append(nums, make([]int, c)...)
+}
+
+// 66. Plus One
+// https://leetcode.com/problems/plus-one/
+func plusOne(digits []int) []int {
+
+	for i := len(digits) - 1; i >= 0; i-- {
+		digits[i] = (digits[i] + 1) % 10
+		if digits[i] != 0 {
+			return digits
+		}
+	}
+	digits = append([]int{1}, digits...)
+	return digits
+
 }

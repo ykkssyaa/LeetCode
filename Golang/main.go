@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 
-	arr := []int{0, 0, 1}
-	moveZeroes(arr)
+	arr := []int{9, 9, 9}
+	plusOne(arr)
 	fmt.Println(arr)
 
 }

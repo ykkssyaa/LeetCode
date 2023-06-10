@@ -2,8 +2,8 @@
 
 [My Accont on LeetCode](https://leetcode.com/ykkssyaa/)
 
-## Solved problems count: __16__
-### Easy: 14
+## Solved problems count: __17__
+### Easy: 15
 ### Medium: 1
 ### Hard: 1
 
@@ -24,6 +24,7 @@
 12. [242. Valid Anagram](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/valid-anagram/)
 13. [459. Repeated Substring Pattern](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/repeated-substring-pattern/)
 14. [283. Move Zeroes](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/move-zeroes/)
+15. [66. Plus One](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/plus-one/)
 
 
 
