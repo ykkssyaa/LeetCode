@@ -2,15 +2,15 @@
 
 [My Accont on LeetCode](https://leetcode.com/ykkssyaa/)
 
-## Solved problems count: __19__
-### Easy: 17
+## Solved problems count: __20__
+### Easy: 18
 ### Medium: 1
 ### Hard: 1
 
 ## Solutions
 
 ## Easy
-1. [1. Two Sum](Two%20Sum/Program.cs) - [on LeetCode](https://leetcode.com/problems/two-sum/)
+1. [1. Two Sum](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/two-sum/)
 2. [9. Palindrome Number](Polindrom%20Number/Program.cs) - [on LeetCode](https://leetcode.com/problems/palindrome-number/)
 3. [13.Roman to Integer](JavaLeetCode/src/main/java/org/LeetCode/Main.java) - [on LeetCode](https://leetcode.com/problems/roman-to-integer/)
 4. [21. Merge Two Sorted Lists](Merge%20Two%20Sorted%20Lists/Merge%20Two%20Sorted%20Lists.cpp) - [on LeetCode](https://leetcode.com/problems/merge-two-sorted-lists/)
@@ -28,7 +28,6 @@
 16. [1502. Can Make Arithmetic Progression From Sequence](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/)
 17. [1822. Sign of the Product of an Array](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/sign-of-the-product-of-an-array/)
 18. [896. Monotonic Array](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/monotonic-array/)
-
 
 
 ## Medium
