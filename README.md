@@ -12,7 +12,7 @@
 ## Easy
 1. [1. Two Sum](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/two-sum/)
 2. [9. Palindrome Number](Polindrom%20Number/Program.cs) - [on LeetCode](https://leetcode.com/problems/palindrome-number/)
-3. [13.Roman to Integer](JavaLeetCode/src/main/java/org/LeetCode/Main.java) - [on LeetCode](https://leetcode.com/problems/roman-to-integer/)
+3. [13.Roman to Integer](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/roman-to-integer/)
 4. [21. Merge Two Sorted Lists](Merge%20Two%20Sorted%20Lists/Merge%20Two%20Sorted%20Lists.cpp) - [on LeetCode](https://leetcode.com/problems/merge-two-sorted-lists/)
 5. [100. Same Tree](Same%20Tree/Same%20Tree.cpp) - [on LeetCode](https://leetcode.com/problems/same-tree/)
 6. [144. Binary Tree Preorder Traversal](Binary%20Tree%20Preorder%20Traversal/Binary%20Tree%20Preorder%20Traversal.cpp) - [on LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/)
