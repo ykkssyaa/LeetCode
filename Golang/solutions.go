@@ -1,5 +1,7 @@
 package main
 
+import "strings"
+
 func strStr(haystack string, needle string) int {
 	if len(haystack) < len(needle) {
 		return -1
@@ -326,4 +328,8 @@ func toLowerCase(s string) string {
 	}
 
 	return s
+}
+
+func toLowerCaseV2(s string) string {
+	return strings.ToLower(s)
 }
