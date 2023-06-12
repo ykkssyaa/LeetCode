@@ -244,21 +244,13 @@ func romanToInt(s string) int {
 func lengthOfLastWord(s string) int {
 
 	var count int = 0
-	flag := true
 
-	for _, char := range s {
-		if char != ' ' {
-			if flag {
-				count++
-			} else {
-				count = 1
-				flag = true
-			}
-		} else {
-			flag = false // Если встречаем пробел - слово закончилось
-			// Если встречаем новое слово в данном случае, то обнуляем счетчик
+	for i := len(s) - 1; i >= 0; i-- {
+		if s[i] != ' ' {
+			count++
+		} else if s[i] == ' ' && count != 0 {
+			return count
 		}
-
 	}
 	return count
 }
