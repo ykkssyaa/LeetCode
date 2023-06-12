@@ -238,3 +238,27 @@ func romanToInt(s string) int {
 	}
 	return res + dict[s[len(s)-1]]
 }
+
+// 58. Length of Last Word
+// https://leetcode.com/problems/length-of-last-word/
+func lengthOfLastWord(s string) int {
+
+	var count int = 0
+	flag := true
+
+	for _, char := range s {
+		if char != ' ' {
+			if flag {
+				count++
+			} else {
+				count = 1
+				flag = true
+			}
+		} else {
+			flag = false // Если встречаем пробел - слово закончилось
+			// Если встречаем новое слово в данном случае, то обнуляем счетчик
+		}
+
+	}
+	return count
+}
