@@ -31,6 +31,7 @@
 19. [58. Length of Last Word](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/length-of-last-word/)
 20. [709. To Lower Case](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/to-lower-case/)
 21. [682. Baseball Game](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/baseball-game/)
+22. [657. Robot Return to Origin](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/robot-return-to-origin/)
 
 
 ## Medium

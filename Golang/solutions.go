@@ -368,3 +368,25 @@ func calPoints(operations []string) int {
 	}
 	return res
 }
+
+// 657. Robot Return to Origin
+// https://leetcode.com/problems/robot-return-to-origin/
+func judgeCircle(moves string) bool {
+
+	x, y := 0, 0
+
+	for _, char := range moves {
+		switch char {
+		case 'L':
+			x++
+		case 'R':
+			x--
+		case 'U':
+			y++
+		case 'D':
+			y--
+		}
+	}
+
+	return x == 0 && y == 0
+}
