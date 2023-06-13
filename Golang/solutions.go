@@ -1,6 +1,9 @@
 package main
 
-import "strings"
+import (
+	"strconv"
+	"strings"
+)
 
 func strStr(haystack string, needle string) int {
 	if len(haystack) < len(needle) {
@@ -332,4 +335,36 @@ func toLowerCase(s string) string {
 
 func toLowerCaseV2(s string) string {
 	return strings.ToLower(s)
+}
+
+// 682. Baseball Game
+// https://leetcode.com/problems/baseball-game/
+func calPoints(operations []string) int {
+	var scores []int
+	for _, operation := range operations {
+
+		switch operation {
+		case "D":
+			if len(scores) != 0 {
+				scores = append(scores, 2*scores[len(scores)-1])
+
+			}
+		case "C":
+			scores = scores[:len(scores)-1]
+		case "+":
+			if len(scores) >= 2 {
+				scores = append(scores, scores[len(scores)-1]+scores[len(scores)-2])
+			}
+		default:
+			v, _ := strconv.Atoi(operation)
+
+			scores = append(scores, v)
+		}
+	}
+
+	var res int = 0
+	for _, score := range scores {
+		res += score
+	}
+	return res
 }
