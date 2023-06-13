@@ -2,8 +2,8 @@
 
 [My Accont on LeetCode](https://leetcode.com/ykkssyaa/)
 
-## Solved problems count: __20__
-### Easy: 18
+## Solved problems count: __23__
+### Easy: 21
 ### Medium: 1
 ### Hard: 1
 
@@ -28,6 +28,9 @@
 16. [1502. Can Make Arithmetic Progression From Sequence](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/)
 17. [1822. Sign of the Product of an Array](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/sign-of-the-product-of-an-array/)
 18. [896. Monotonic Array](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/monotonic-array/)
+19. [58. Length of Last Word](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/length-of-last-word/)
+20. [709. To Lower Case](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/to-lower-case/)
+21. [682. Baseball Game](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/baseball-game/)
 
 
 ## Medium
