@@ -2,9 +2,9 @@
 
 [My Accont on LeetCode](https://leetcode.com/ykkssyaa/)
 
-## Solved problems count: __25__
+## Solved problems count: __26__
 ### Easy: 23
-### Medium: 1
+### Medium: 2
 ### Hard: 1
 
 ## Solutions
@@ -37,6 +37,7 @@
 
 ## Medium
 1. [1680. Concatenation of Consecutive Binary Numbers](Concatenation%20of%20Consecutive%20Binary%20Numbers/Program.cs) - [on LeetCode](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)
+2. [1041. Robot Bounded In Circle](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/robot-bounded-in-circle/)
 
 ## Hard
 1. [149. Max Points on a Line](Max%20Points%20on%20a%20Line/Max%20Points%20on%20a%20Line.cpp) - [on LeetCode](https://leetcode.com/problems/max-points-on-a-line/)
