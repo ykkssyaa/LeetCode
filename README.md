@@ -2,8 +2,8 @@
 
 [My Accont on LeetCode](https://leetcode.com/ykkssyaa/)
 
-## Solved problems count: __23__
-### Easy: 21
+## Solved problems count: __25__
+### Easy: 23
 ### Medium: 1
 ### Hard: 1
 
@@ -32,6 +32,7 @@
 20. [709. To Lower Case](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/to-lower-case/)
 21. [682. Baseball Game](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/baseball-game/)
 22. [657. Robot Return to Origin](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/robot-return-to-origin/)
+23. [1275. Find Winner on a Tic Tac Toe Game](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/)
 
 
 ## Medium

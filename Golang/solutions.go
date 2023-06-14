@@ -390,3 +390,46 @@ func judgeCircle(moves string) bool {
 
 	return x == 0 && y == 0
 }
+
+// 1275. Find Winner on a Tic Tac Toe Game
+// https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/
+func tictactoe(moves [][]int) string {
+
+	// 0, 1, 2 - rows; 3,4,5 - columns; 6,7 diagonals
+	var A, B []int = make([]int, 8), make([]int, 8)
+
+	for i := 0; i < len(moves); i++ {
+		var player []int
+
+		if i%2 == 0 {
+			player = A
+		} else {
+			player = B
+		}
+
+		player[moves[i][0]]++
+		player[moves[i][1]+3]++
+
+		if moves[i][0] == moves[i][1] {
+			player[6]++
+		}
+		if moves[i][0]+moves[i][1] == 2 {
+			player[7]++
+		}
+	}
+
+	for i := 0; i < 8; i++ {
+		if A[i] == 3 {
+			return "A"
+		}
+		if B[i] == 3 {
+			return "B"
+		}
+	}
+
+	if len(moves) < 9 {
+		return "Pending"
+	}
+	return "Draw"
+
+}
