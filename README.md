@@ -2,9 +2,9 @@
 
 [My Accont on LeetCode](https://leetcode.com/ykkssyaa/)
 
-## Solved problems count: __26__
-### Easy: 23
-### Medium: 2
+## Solved problems count: __28__
+### Easy: 24
+### Medium: 3
 ### Hard: 1
 
 ## Solutions
@@ -33,11 +33,13 @@
 21. [682. Baseball Game](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/baseball-game/)
 22. [657. Robot Return to Origin](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/robot-return-to-origin/)
 23. [1275. Find Winner on a Tic Tac Toe Game](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/)
+24. [1672. Richest Customer Wealth](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/richest-customer-wealth/)
 
 
 ## Medium
 1. [1680. Concatenation of Consecutive Binary Numbers](Concatenation%20of%20Consecutive%20Binary%20Numbers/Program.cs) - [on LeetCode](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)
 2. [1041. Robot Bounded In Circle](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/robot-bounded-in-circle/)
+3. [73. Set Matrix Zeroes](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/set-matrix-zeroes/)
 
 ## Hard
 1. [149. Max Points on a Line](Max%20Points%20on%20a%20Line/Max%20Points%20on%20a%20Line.cpp) - [on LeetCode](https://leetcode.com/problems/max-points-on-a-line/)
