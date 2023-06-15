@@ -437,16 +437,29 @@ func tictactoe(moves [][]int) string {
 // 1672. Richest Customer Wealth
 // https://leetcode.com/problems/richest-customer-wealth/
 func maximumWealth(accounts [][]int) int {
-	max, sum := 0, 0
+	max := 0
+
+	accountSum := func(arr []int, ch chan int) {
+		temp := 0
+		for _, v := range arr {
+			temp += v
+		}
+		ch <- temp
+	}
+
+	ch := make(chan int)
 
 	for i := 0; i < len(accounts); i++ {
-		sum = 0
-		for j := 0; j < len(accounts[0]); j++ {
-			sum += accounts[i][j]
-		}
-		if sum > max {
-			max = sum
+		go accountSum(accounts[i], ch)
+	}
+
+	for i := 0; i < len(accounts); i++ {
+		temp := <-ch
+
+		if temp > max {
+			max = temp
 		}
 	}
+
 	return max
 }
