@@ -463,3 +463,28 @@ func maximumWealth(accounts [][]int) int {
 
 	return max
 }
+
+// 1572. Matrix Diagonal Sum
+// https://leetcode.com/problems/matrix-diagonal-sum/
+func diagonalSum(mat [][]int) int {
+
+	if len(mat) == 1 {
+		return mat[0][0]
+	}
+
+	var sum int
+	for i := 0; i < len(mat)/2; i++ {
+		j := len(mat) - i - 1
+
+		sum += mat[i][i]
+		sum += mat[i][j]
+		sum += mat[j][i]
+		sum += mat[j][j]
+	}
+
+	if len(mat)%2 == 1 {
+		sum += mat[len(mat)/2+1][len(mat)/2+1]
+	}
+
+	return sum
+}

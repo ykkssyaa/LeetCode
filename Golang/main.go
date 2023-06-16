@@ -4,8 +4,6 @@ import "fmt"
 
 func main() {
 
-	matrix := [][]int{{1, 0}, {2, 4}, {3, 6}, {1, 0}}
-	setZeroes(matrix)
-
-	fmt.Println(matrix)
+	matrix := [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
+	fmt.Println(diagonalSum(matrix))
 }
