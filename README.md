@@ -2,8 +2,8 @@
 
 [My Accont on LeetCode](https://leetcode.com/ykkssyaa/)
 
-## Solved problems count: __28__
-### Easy: 24
+## Solved problems count: __30__
+### Easy: 25
 ### Medium: 3
 ### Hard: 1
 
@@ -34,12 +34,14 @@
 22. [657. Robot Return to Origin](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/robot-return-to-origin/)
 23. [1275. Find Winner on a Tic Tac Toe Game](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/)
 24. [1672. Richest Customer Wealth](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/richest-customer-wealth/)
+25. [1572. Matrix Diagonal Sum](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/matrix-diagonal-sum/)
 
 
 ## Medium
 1. [1680. Concatenation of Consecutive Binary Numbers](Concatenation%20of%20Consecutive%20Binary%20Numbers/Program.cs) - [on LeetCode](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)
 2. [1041. Robot Bounded In Circle](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/robot-bounded-in-circle/)
 3. [73. Set Matrix Zeroes](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/set-matrix-zeroes/)
+4. [54. Spiral Matrix](Golang/mediumTasks.go) - [on LeetCode](// https://leetcode.com/problems/spiral-matrix/)
 
 ## Hard
 1. [149. Max Points on a Line](Max%20Points%20on%20a%20Line/Max%20Points%20on%20a%20Line.cpp) - [on LeetCode](https://leetcode.com/problems/max-points-on-a-line/)
