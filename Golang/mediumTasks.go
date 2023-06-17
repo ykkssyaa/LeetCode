@@ -92,3 +92,47 @@ func zeroLine(matrix [][]int, line int) {
 		matrix[line][i] = 0
 	}
 }
+
+// 54. Spiral Matrix
+// https://leetcode.com/problems/spiral-matrix/?envType=study-plan-v2&envId=programming-skills
+func spiralOrder(matrix [][]int) []int {
+
+	n, m := len(matrix), len(matrix[0])
+	if n == 0 {
+		return []int{}
+	}
+
+	arr := make([]int, 0, len(matrix)*len(matrix[0]))
+
+	colBegin, colEnd := 0, m-1
+	rowBegin, rowEnd := 0, n-1
+
+	for colBegin <= colEnd && rowBegin <= rowEnd {
+
+		for i := colBegin; i <= colEnd; i++ {
+			arr = append(arr, matrix[rowBegin][i])
+		}
+		rowBegin++
+
+		for j := rowBegin; j <= rowEnd; j++ {
+			arr = append(arr, matrix[j][colEnd])
+		}
+		colEnd--
+
+		if rowBegin <= rowEnd {
+			for i := colEnd; i >= colBegin; i-- {
+				arr = append(arr, matrix[rowEnd][i])
+			}
+			rowEnd--
+		}
+
+		if colBegin <= colEnd {
+			for j := rowEnd; j >= rowBegin; j-- {
+				arr = append(arr, matrix[j][colBegin])
+			}
+			colBegin++
+		}
+	}
+
+	return arr
+}
