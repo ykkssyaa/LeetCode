@@ -94,7 +94,7 @@ func zeroLine(matrix [][]int, line int) {
 }
 
 // 54. Spiral Matrix
-// https://leetcode.com/problems/spiral-matrix/?envType=study-plan-v2&envId=programming-skills
+// https://leetcode.com/problems/spiral-matrix/
 func spiralOrder(matrix [][]int) []int {
 
 	n, m := len(matrix), len(matrix[0])

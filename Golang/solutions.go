@@ -488,3 +488,24 @@ func diagonalSum(mat [][]int) int {
 
 	return sum
 }
+
+// 1491. Average Salary Excluding the Minimum and Maximum Salary
+// https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/
+func average(salary []int) float64 {
+	min, max := salary[0], salary[0]
+	sum := 0
+
+	for _, v := range salary {
+		if v < min {
+			min = v
+		}
+		if v > max {
+			max = v
+		}
+		sum += v
+	}
+
+	sum -= min + max
+
+	return float64(sum) / float64(len(salary)-2)
+}

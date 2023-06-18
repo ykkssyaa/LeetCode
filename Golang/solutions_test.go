@@ -91,3 +91,25 @@ func Test_tictactoe(t *testing.T) {
 		})
 	}
 }
+
+func Test_average(t *testing.T) {
+	type args struct {
+		salary []int
+	}
+	tests := []struct {
+		name string
+		args args
+		want float64
+	}{
+		{"1",
+			args{[]int{48000, 59000, 99000, 13000, 78000, 45000, 31000, 17000, 39000, 37000, 93000, 77000, 33000, 28000, 4000, 54000, 67000, 6000, 1000, 11000}},
+			41111.11111},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := average(tt.args.salary); got != tt.want {
+				t.Errorf("average() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
