@@ -37,13 +37,13 @@
 25. [1572. Matrix Diagonal Sum](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/matrix-diagonal-sum/)
 26. [1491. Average Salary Excluding the Minimum and Maximum Salary](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/)
 27. [860. Lemonade Change](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/lemonade-change/)
-28. [1523. Count Odd Numbers in an Interval Range]() - - [on LeetCode](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/)
+28. [1523. Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/submissions/973573907/) - - [on LeetCode](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/)
 
 ## Medium
 1. [1680. Concatenation of Consecutive Binary Numbers](Concatenation%20of%20Consecutive%20Binary%20Numbers/Program.cs) - [on LeetCode](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)
 2. [1041. Robot Bounded In Circle](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/robot-bounded-in-circle/)
 3. [73. Set Matrix Zeroes](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/set-matrix-zeroes/)
-4. [54. Spiral Matrix](Golang/mediumTasks.go) - [on LeetCode](// https://leetcode.com/problems/spiral-matrix/)
+4. [54. Spiral Matrix](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/spiral-matrix/)
 
 ## Hard
 1. [149. Max Points on a Line](Max%20Points%20on%20a%20Line/Max%20Points%20on%20a%20Line.cpp) - [on LeetCode](https://leetcode.com/problems/max-points-on-a-line/)
