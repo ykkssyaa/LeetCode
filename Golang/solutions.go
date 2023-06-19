@@ -509,3 +509,36 @@ func average(salary []int) float64 {
 
 	return float64(sum) / float64(len(salary)-2)
 }
+
+// 860. Lemonade Change
+// https://leetcode.com/problems/lemonade-change/
+func lemonadeChange(bills []int) bool {
+
+	var count5, count10 int
+
+	for _, bill := range bills {
+
+		if bill == 5 {
+			count5++
+		} else if bill == 10 {
+			if count5 < 1 {
+				return false
+			}
+
+			count5--
+			count10++
+
+		} else if bill == 20 {
+			if count10 >= 1 && count5 >= 1 {
+				count10--
+				count5--
+			} else if count5 >= 3 {
+				count5 -= 3
+			} else {
+				return false
+			}
+		}
+	}
+
+	return true
+}
