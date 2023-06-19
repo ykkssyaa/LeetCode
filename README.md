@@ -2,9 +2,9 @@
 
 [My Accont on LeetCode](https://leetcode.com/ykkssyaa/)
 
-## Solved problems count: __30__
-### Easy: 25
-### Medium: 3
+## Solved problems count: __33__
+### Easy: 28
+### Medium: 4
 ### Hard: 1
 
 ## Solutions
@@ -35,7 +35,9 @@
 23. [1275. Find Winner on a Tic Tac Toe Game](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/)
 24. [1672. Richest Customer Wealth](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/richest-customer-wealth/)
 25. [1572. Matrix Diagonal Sum](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/matrix-diagonal-sum/)
-
+26. [1491. Average Salary Excluding the Minimum and Maximum Salary](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/)
+27. [860. Lemonade Change](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/lemonade-change/)
+28. [1523. Count Odd Numbers in an Interval Range]() - - [on LeetCode](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/)
 
 ## Medium
 1. [1680. Concatenation of Consecutive Binary Numbers](Concatenation%20of%20Consecutive%20Binary%20Numbers/Program.cs) - [on LeetCode](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)
