@@ -38,6 +38,8 @@
 26. [1491. Average Salary Excluding the Minimum and Maximum Salary](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/)
 27. [860. Lemonade Change](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/lemonade-change/)
 28. [1523. Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/submissions/973573907/) - - [on LeetCode](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/)
+29. [976. Largest Perimeter Triangle](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/largest-perimeter-triangle/)
+30. [1232. Check If It Is a Straight Line](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/check-if-it-is-a-straight-line/)
 
 ## Medium
 1. [1680. Concatenation of Consecutive Binary Numbers](Concatenation%20of%20Consecutive%20Binary%20Numbers/Program.cs) - [on LeetCode](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)
