@@ -1,6 +1,7 @@
 package main
 
 import (
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -541,4 +542,20 @@ func lemonadeChange(bills []int) bool {
 	}
 
 	return true
+}
+
+// 976. Largest Perimeter Triangle
+// https://leetcode.com/problems/largest-perimeter-triangle/
+func largestPerimeter(nums []int) int {
+
+	sort.Sort(sort.IntSlice(nums)) // O(log(n)*n)
+
+	// O(n)
+	for i := len(nums) - 1; i >= 2; i-- {
+		if !(nums[i] >= nums[i-1]+nums[i-2]) {
+			return nums[i] + nums[i+1] + nums[i+2]
+		}
+	}
+
+	return 0
 }
