@@ -559,3 +559,27 @@ func largestPerimeter(nums []int) int {
 
 	return 0
 }
+
+// 1232. Check If It Is a Straight Line
+// https://leetcode.com/problems/check-if-it-is-a-straight-line/
+func checkStraightLine(coordinates [][]int) bool {
+
+	k, flag := koef(coordinates[0][0], coordinates[0][1], coordinates[1][0], coordinates[1][1])
+
+	for i := 2; i < len(coordinates); i++ {
+		if k1, fl := koef(coordinates[0][0], coordinates[0][1], coordinates[i][0], coordinates[i][1]); k != k1 || fl != flag {
+			return false
+		}
+	}
+
+	return true
+}
+
+func koef(x1, y1, x2, y2 int) (float32, bool) {
+
+	if y1 == y2 {
+		return 0, true
+	}
+
+	return float32(x1-x2) / float32(y1-y2), false
+}
