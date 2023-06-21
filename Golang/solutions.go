@@ -570,3 +570,65 @@ func checkStraightLine(c [][]int) bool {
 	}
 	return true
 }
+
+// 67. Add Binary
+// https://leetcode.com/problems/add-binary/
+func addBinary(a string, b string) string {
+
+	// а будет самое длинное число
+	if len(a) < len(b) {
+		a, b = b, a
+	}
+
+	flag := false            // Флаг переноса
+	i := len(b) - 1          // Счетчик по b
+	j := i + len(a) - len(b) // Счетчик по a (учитываю разницу между числами)
+
+	for ; i >= 0; i-- { // Прохожусь по битам самого длинного числа
+
+		if b[i] == '1' {
+			if a[j] == '0' {
+				if !flag { // Если не было переноса
+					a = a[:j] + "1" + a[j+1:]
+				}
+			} else {
+				if !flag { // Если не было переноса
+					flag = true
+					a = a[:j] + "0" + a[j+1:]
+				}
+			}
+		} else {
+			if flag {
+				if a[j] == '0' {
+					a = a[:j] + "1" + a[j+1:]
+					flag = false
+				} else {
+					a = a[:j] + "0" + a[j+1:]
+				}
+			}
+		}
+
+		j--
+	}
+
+	for ; j >= 0; j-- { // Прохожусь по оставшейся части a, если есть перенос на следующий разряд
+		if flag {
+
+			if a[j] == '0' {
+				a = a[:j] + "1" + a[j+1:]
+				flag = false
+			} else {
+				a = a[:j] + "0" + a[j+1:]
+			}
+		} else {
+			break
+		}
+	}
+
+	if flag { // Если перенос сохранился после всех обновлений, то добавляем единицу в начало
+		a = "1" + a
+	}
+
+	return a
+
+}
