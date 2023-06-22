@@ -136,3 +136,27 @@ func spiralOrder(matrix [][]int) []int {
 
 	return arr
 }
+
+// 50. Pow(x, n)
+// https://leetcode.com/problems/powx-n/
+func myPow(x float64, n int) float64 {
+	var res float64 = 1.0
+
+	if x == 1 {
+		return 1
+	}
+	if n < 0 {
+		x = 1 / x
+	}
+
+	for n != 0 {
+		if n%2 != 0 {
+			res *= x
+		}
+
+		x *= x
+		n /= 2
+	}
+
+	return res
+}
