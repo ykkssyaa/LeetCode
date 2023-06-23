@@ -733,3 +733,24 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	// Возвращаем голову
 	return head
 }
+
+// 206. Reverse Linked List
+// https://leetcode.com/problems/reverse-linked-list/
+func reverseList(head *ListNode) *ListNode {
+
+	if head == nil {
+		return nil
+	}
+
+	newHead := &ListNode{head.Val, nil}
+	head = head.Next
+
+	for head != nil {
+		newNode := &ListNode{head.Val, newHead}
+		newHead = newNode
+
+		head = head.Next
+	}
+
+	return newHead
+}
