@@ -667,3 +667,69 @@ func multiply(num1 string, num2 string) string {
 
 	return string(res)
 }
+
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
+// 21. Merge Two Sorted Lists
+// https://leetcode.com/problems/merge-two-sorted-lists/description/
+func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
+
+	// Если какой-то из списков пуст
+	if list1 == nil {
+		return list2
+	}
+	if list2 == nil {
+		return list1
+	}
+
+	var head, cur *ListNode
+
+	// Заполняем голову первым значением
+	if list1.Val <= list2.Val {
+		head = &ListNode{list1.Val, nil}
+		list1 = list1.Next
+	} else {
+		head = &ListNode{list2.Val, nil}
+		list2 = list2.Next
+	}
+	cur = head
+
+	// Проход по спискам, пока в обоих остались не просмотренные элементы
+	for list1 != nil || list2 != nil {
+
+		// Если первый список пуст, добавляем оставшиеся элементы второго
+		// И наоборот, если второй пуст
+		if list1 == nil {
+			cur.Next = &ListNode{list2.Val, nil}
+			cur = cur.Next
+
+			list2 = list2.Next
+		} else if list2 == nil {
+			cur.Next = &ListNode{list1.Val, nil}
+			cur = cur.Next
+
+			list1 = list1.Next
+
+		} else { // Если оба с элементами, сравниваем следующие элементы каждого из списков и добавляем минимальный
+
+			if list1.Val <= list2.Val {
+
+				cur.Next = &ListNode{list1.Val, nil}
+				cur = cur.Next
+
+				list1 = list1.Next
+			} else {
+				cur.Next = &ListNode{list2.Val, nil}
+				cur = cur.Next
+
+				list2 = list2.Next
+			}
+		}
+
+	}
+	// Возвращаем голову
+	return head
+}
