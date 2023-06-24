@@ -160,3 +160,92 @@ func myPow(x float64, n int) float64 {
 
 	return res
 }
+
+// 2. Add Two Numbers
+// https://leetcode.com/problems/add-two-numbers/
+func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+
+	// На случай пустых списков
+	if l1 == nil {
+		return l2
+	}
+	if l2 == nil {
+		return l1
+	}
+
+	// Голова и текущий элемент результирующего списков
+	var head, cur *ListNode
+	var trans bool = false // Флаг, есть ли перенос
+
+	// Добавляем первый элемент
+	head = &ListNode{l1.Val + l2.Val, nil}
+
+	l1 = l1.Next
+	l2 = l2.Next
+
+	// Обработка переноса
+	if head.Val >= 10 {
+		trans = true
+		head.Val %= 10
+	}
+
+	cur = head
+
+	for l1 != nil || l2 != nil {
+
+		if l1 == nil { // Если первый список пустой
+			if trans {
+				l2.Val++
+				trans = false
+			}
+
+			cur.Next = &ListNode{l2.Val, nil}
+			cur = cur.Next
+			l2 = l2.Next
+
+			if cur.Val >= 10 {
+				trans = true
+				head.Val %= 10
+			}
+		} else if l2 == nil { // Если второй список пустой
+			if trans {
+				l1.Val++
+				trans = false
+			}
+
+			cur.Next = &ListNode{l1.Val, nil}
+			cur = cur.Next
+			l1 = l1.Next
+
+			if cur.Val >= 10 {
+				trans = true
+				head.Val %= 10
+			}
+		} else {
+
+			cur.Next = &ListNode{l1.Val + l2.Val, nil}
+
+			if trans {
+				cur.Next.Val++
+				trans = false
+			}
+
+			cur = cur.Next
+			l1 = l1.Next
+			l2 = l2.Next
+
+			if cur.Val >= 10 {
+				trans = true
+				cur.Val %= 10
+			}
+		}
+
+	}
+
+	if trans {
+		cur.Next = &ListNode{1, nil}
+	}
+
+	return head
+
+}
