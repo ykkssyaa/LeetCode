@@ -2,12 +2,24 @@
 
 [My Accont on LeetCode](https://leetcode.com/ykkssyaa/)
 
-## Solved problems count: __38__
-### Easy: 31
-### Medium: 6
+## Solved problems count: __40__
+### Easy: 32
+### Medium: 3
 ### Hard: 1
 
-## Solutions
+### Solutions
+
+## Hard
+1. [149. Max Points on a Line](Max%20Points%20on%20a%20Line/Max%20Points%20on%20a%20Line.cpp) - [on LeetCode](https://leetcode.com/problems/max-points-on-a-line/)
+
+## Medium
+1. [1680. Concatenation of Consecutive Binary Numbers](Concatenation%20of%20Consecutive%20Binary%20Numbers/Program.cs) - [on LeetCode](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)
+2. [1041. Robot Bounded In Circle](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/robot-bounded-in-circle/)
+3. [73. Set Matrix Zeroes](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/set-matrix-zeroes/)
+4. [54. Spiral Matrix](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/spiral-matrix/)
+5. [43. Multiply Strings](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/multiply-strings/)
+6. [50. Pow(x, n)](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/powx-n/)
+7. [2. Add Two Numbers](Golang/mediumTasks.go) -  [on LeetCode](https://leetcode.com/problems/add-two-numbers/)
 
 ## Easy
 1. [1. Two Sum](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/two-sum/)
@@ -41,14 +53,4 @@
 29. [976. Largest Perimeter Triangle](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/largest-perimeter-triangle/)
 30. [1232. Check If It Is a Straight Line](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/check-if-it-is-a-straight-line/)
 31. [67. Add Binary](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/add-binary/)
-
-## Medium
-1. [1680. Concatenation of Consecutive Binary Numbers](Concatenation%20of%20Consecutive%20Binary%20Numbers/Program.cs) - [on LeetCode](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)
-2. [1041. Robot Bounded In Circle](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/robot-bounded-in-circle/)
-3. [73. Set Matrix Zeroes](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/set-matrix-zeroes/)
-4. [54. Spiral Matrix](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/spiral-matrix/)
-5. [43. Multiply Strings](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/multiply-strings/)
-6. [50. Pow(x, n)](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/powx-n/)
-
-## Hard
-1. [149. Max Points on a Line](Max%20Points%20on%20a%20Line/Max%20Points%20on%20a%20Line.cpp) - [on LeetCode](https://leetcode.com/problems/max-points-on-a-line/)
+32. [206. Reverse Linked List](Golang/solutions.go) -  [on LeetCode](https://leetcode.com/problems/reverse-linked-list/)
