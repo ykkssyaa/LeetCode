@@ -20,6 +20,7 @@
 5. [43. Multiply Strings](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/multiply-strings/)
 6. [50. Pow(x, n)](Golang/mediumTasks.go) - [on LeetCode](https://leetcode.com/problems/powx-n/)
 7. [2. Add Two Numbers](Golang/mediumTasks.go) -  [on LeetCode](https://leetcode.com/problems/add-two-numbers/)
+8. [2. Add Two Numbers II](Golang/mediumTasks.go) -  [on LeetCode](https://leetcode.com/problems/add-two-numbers-ii/)
 
 ## Easy
 1. [1. Two Sum](Golang/solutions.go) - [on LeetCode](https://leetcode.com/problems/two-sum/)

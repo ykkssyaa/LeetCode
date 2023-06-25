@@ -1,6 +1,9 @@
 package main
 
-import "sync"
+import (
+	"fmt"
+	"sync"
+)
 
 // 1041. Robot Bounded In Circle
 // https://leetcode.com/problems/robot-bounded-in-circle/
@@ -248,4 +251,93 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 
 	return head
 
+}
+
+// 445. Add Two Numbers II
+// https://leetcode.com/problems/add-two-numbers-ii/
+func addTwoNumbers2(l1 *ListNode, l2 *ListNode) *ListNode {
+	var s1, s2 stack
+
+	for l1 != nil {
+		s1.Push(l1.Val)
+		l1 = l1.Next
+	}
+	for l2 != nil {
+		s2.Push(l2.Val)
+		l2 = l2.Next
+	}
+
+	var head *ListNode
+	var trans bool = false
+
+	for {
+		a1, err1 := s1.Pop()
+		a2, err2 := s2.Pop()
+
+		if err1 != nil && err2 != nil { // Если оба стека пустые
+			break
+		} else if err1 == nil && err2 == nil { // Если в обоих стеках есть элменты
+
+			head = &ListNode{a1 + a2, head}
+
+			if trans {
+				trans = false
+				head.Val++
+			}
+
+			if head.Val >= 10 {
+				trans = true
+				head.Val %= 10
+			}
+
+		} else if err1 != nil { // Если первый стек пустой
+			head = &ListNode{a2, head}
+
+			if trans {
+				trans = false
+				head.Val++
+			}
+
+			if head.Val >= 10 {
+				trans = true
+				head.Val %= 10
+			}
+
+		} else { // Если второй стек пустой
+			head = &ListNode{a1, head}
+
+			if trans {
+				trans = false
+				head.Val++
+			}
+
+			if head.Val >= 10 {
+				trans = true
+				head.Val %= 10
+			}
+		}
+	}
+
+	if trans {
+		head = &ListNode{1, head}
+	}
+
+	return head
+}
+
+type stack []int
+
+func (s *stack) Push(a int) {
+	*s = append(*s, a)
+}
+
+func (s *stack) Pop() (int, error) {
+
+	if len(*s) == 0 {
+		return 0, fmt.Errorf("stack is empty")
+	}
+	a := (*s)[len(*s)-1]
+	*s = (*s)[:len(*s)-1]
+
+	return a, nil
 }
